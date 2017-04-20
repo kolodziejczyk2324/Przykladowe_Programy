@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:background="@drawable/edit_text_style_1"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/textEditText"
+                android:background="@drawable/edit_text_style_2"
+                android:gravity="top"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:entries="@array/spinner_array"
+                android:id="@+id/spinner"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0px"/>
+
+            <Button
+                android:text="@string/add"
+                android:id="@+id/inserButton"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/daySpinner"
+            style="@style/dateSpinnersStyle"/>
+        <Spinner
+            android:id="@+id/monthSpinner"
+            style="@style/dateSpinnersStyle"/>
+        <Spinner
+            android:id="@+id/yearSpinner"
+            style="@style/dateSpinnersStyle"/>
+        <Spinner
+            android:id="@+id/hourSpinner"
+            style="@style/dateSpinnersStyle"/>
+        <Spinner
+            android:id="@+id/minSpinner"
+            style="@style/dateSpinnersStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

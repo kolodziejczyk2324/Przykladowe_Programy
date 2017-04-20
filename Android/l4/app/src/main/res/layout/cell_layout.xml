@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lack_shape">
+
+    <TextView
+        android:id="@+id/titleCellTextView"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:layout_weight="4"
+        android:layout_width="0px"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dayCellTextView"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0px" />
+
+        <TextView
+            android:id="@+id/monthCellTextView"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/monthColor"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0px" />
+
+        <TextView
+            android:id="@+id/yearCellTextView"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0px" />
+
+    </LinearLayout>
+
+</LinearLayout>

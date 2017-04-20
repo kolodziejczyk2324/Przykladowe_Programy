@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lackColor">#CDCDCD</color>
+    <color name="importantColor">#EFF95E</color>
+    <color name="veryImportantColor">#FF5263</color>
+    <color name="monthColor">#4D34EC</color>
+    <color name="strokeColor">#B5B5B5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textColor">#4C0099</color>
+    <color name="editText1Color">#7C7C7C</color>
+    <color name="editText2Color">#DDDDDD</color>
+    <color name="buttonColor">#2A7324</color>
+</resources>

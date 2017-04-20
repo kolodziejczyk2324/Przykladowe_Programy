@@ -1,0 +1,286 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+$blueColor: #006183;
+$redColor: #DE4A2A;
+$greyColor: #555555;
+$greenColor: #55EF55;
+$lightGreyColor: #E1E1E1;
+
+@mixin blue-border() {
+	border-color: $blueColor;
+	border-radius:15px
+}
+
+h1{
+	font-size:300%;
+	font-weight: normal;
+	color: $blueColor;
+}
+h2{
+	font-size:220%;
+	font-weight: normal;
+	color: $blueColor;
+}
+h3{
+	font-size:170%;
+	font-weight: normal;
+	color: $blueColor;
+}
+h4{
+	font-size:130%;
+	margin:2% 0 2% 0;
+	font-weight: normal;
+	color: $blueColor;
+}
+
+#logowanie{
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  color: #55EF55;
+  margin-right: 2%;
+	&:hover{ /*Link po najechaniu*/
+		color:white;
+	}
+}
+
+#IMIE_NAZWISKO{
+	padding: 0 0 0 2%;
+	margin: 0;
+	color: $redColor;
+}
+
+#INPUT_KOMENTARZ{
+	width:100%;
+	height: 100px;
+	font-size: 120%;
+	resize: none;
+	color: $blueColor;
+	border-color: $blueColor;
+}
+
+#WEBTITLEPANEL{
+	background-color: $greyColor;
+	padding-top: 2%;
+}
+
+#container{
+	font-family: Lato;
+	width:90%;
+	max-width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	border-top:3px solid black;
+}
+#LOGOPWR{
+	padding-left:10%;
+	display:none;
+}
+#WEBTITLE{
+	padding-left:3%;
+	color: WHITE;
+}
+#DESCRIPTION{
+	padding-top:2%;
+	margin-left:2%;
+}
+#GLOSOWANIE{
+	background-color: $redColor;
+	clear: both;
+	padding: 1%;
+	overflow:auto;
+}
+.vote_button{
+	background-color: $blueColor;
+	border-radius:15px;
+	color: WHITE;
+	padding: 1%;
+	margin: 1%;
+	float: left;
+}
+
+ul{
+	padding:0;
+	margin:0;
+	list-style-type: none;
+}
+
+#ARTICLETITLE{
+	margin-top:0;
+}
+
+#NAVLIST{
+	background-color: $blueColor;
+	display:none;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	overflow:auto;
+	a {
+		padding:0.5rem 0 0.5rem 5px;
+		border-top:1px solid white;
+		border-right:1px solid $lightGreyColor;
+		border-bottom:1px solid $lightGreyColor;
+		display:block;
+		&:hover{ /*Link po najechaniu*/
+			background-color:black;
+			color:white;
+		}
+	}
+}
+
+a{
+	text-decoration:none;
+	color: WHITE;
+}
+
+#showMenu{
+	background-color: $redColor;
+	display: flex;
+	justify-content: flex-end;
+	padding: 2%;
+}
+
+#trace{
+	background-color: $greyColor;
+	color:WHITE;
+	border:1px solid $lightGreyColor;
+	padding:3%;
+}
+
+#PANEL_Z_KODEM{
+	padding-bottom:2%;
+	border-bottom: 4px solid $lightGreyColor;
+}
+
+#MY_CANVAS{
+	display: none;
+}
+
+.ACT{
+	background-color: $redColor;
+	color:white;
+}
+
+.right{
+	text-align:right;
+}
+
+.cytat{
+	border:3px solid $lightGreyColor;
+	@include blue-border();
+	margin-top:1em;
+}
+
+.panel{
+	padding:10px;
+	color: $blueColor;
+}
+
+blockquote{
+	margin:1.5em 10px;
+	quotes:"\201C""\201D""\2018""\2019";
+	&:before{
+		content:open-quote;
+		color:#DE4A2A;
+		font-size:2em;
+	}
+	p{
+		display:inline
+	}
+}
+
+.button{
+	background:$redColor;
+	color:#fff;
+	padding:.25em .5em;
+	margin:0;
+	cursor:pointer;
+	border-radius:10px
+}
+
+input[type="number"]{
+	width:6em;
+	padding:5px;
+	border:solid 1px $lightGreyColor;
+	box-shadow:inset 1px 1px 2px 0 #707070;
+	font-size:1.1em
+}
+
+pre{
+	overflow:auto;
+	background-color: $greyColor;
+	color: $greenColor;
+	margin:0;
+	padding:1%;
+	font-size:75%;
+	border: 1px solid $lightGreyColor;
+}
+
+body{
+	font-size:23px;
+	margin-right:0;
+	margin-left:0;
+	margin-bottom:0;
+	margin-bottom:1%;
+}
+
+nav{
+	background-color: $redColor;
+}
+	
+aside{
+	padding-left:2%;
+}
+
+footer{
+	font-size:70%;
+	padding: 1% 0 1% 0;
+	background-color: $greyColor;
+	color: WHITE;
+}
+header,nav,article,footer{
+	width:100%;
+}
+
+
+
+@media screen and (min-width: 1200px){
+	
+	#WEBTITLE{
+		color: WHITE;
+	}
+	#LOGOPWR{
+		width:100%;
+		display:block;
+	}
+	
+	nav{
+		box-sizing: border-box;
+	}
+	#MenuRow{
+		height: 0;
+	}
+
+	article{
+		border-left:1px solid grey;
+		padding-left:2%;
+		box-sizing: border-box;
+	}
+	
+	#NAVLIST{
+		display:block;
+	}
+	
+	#showMenu{
+		display:none;
+	}
+
+	aside{
+		padding-left:4%;
+	}
+	
+	#MY_CANVAS{
+		display: block;
+	}
+}

@@ -1,0 +1,283 @@
+/*#DE4A2A - kolor loga katedry
+  #E5F7FB - jasno-niebieski
+  #DDDDDD - quote border
+  #FF4D29 - fav  */
+
+
+/* For mobile phones: */
+* {
+	font-family: Lato; 
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	/*border:1px solid black;*/
+}
+
+[class*='col-'] {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+}
+
+html {
+	font-size: 90%;
+}
+/*article, aside, figure, header, footer, menu, nav, section, .row{
+	display:block;
+}*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia,Times,Times New Roman,serif; 
+	color:#006183;
+	/*font-family: "Times New Roman", Times, serif;*/
+}
+.container {
+	width:90%;
+	margin: 0.5em auto 0 auto;
+}
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+  height:0;
+  visibility:hidden; 
+}
+#logo {
+	display:none;
+}
+#logobar {
+	background-color:#555555;
+}
+#logotext {
+	padding:0.2em;
+	clear:both;
+	margin:0 0 0 0.07em;
+	font-size:3em;
+	color:white;
+}
+#info {
+	margin:0.9em 0.3em;	
+	line-height:150%;
+}
+nav {
+	margin-bottom:1.1em;
+}
+#showMenu {
+	display:block;
+	text-align: right;
+	font-weight: bold;
+	margin-bottom:0.1em;
+	padding:0.5em 1em;
+	width:100%;
+	background-color: #DE4A2A;
+	color:white;
+	cursor: pointer;
+}
+#leftMenu {
+	display:none;
+	margin-bottom:0.5em;
+}
+
+aside {
+	display:none;
+}
+#left {
+	text-align:left;
+}
+#right {
+	text-align:right;
+}
+.button {
+	display:block;
+	/*float:left;*/
+	width:100%;
+	background-color: #006183;
+	color:white;
+	list-style-type:none;
+	padding:0.5em;
+	border-bottom:1px white solid;
+}
+#current {
+	background-color: #DE4A2A;
+	color:white;
+}
+.button:hover, #current:hover {
+	background-color:black;
+	color:white;
+}
+a:link, a:visited, a:hover , a:active {
+    text-decoration: none;
+}
+
+article {
+	width:100%;
+	line-height:140%;
+	margin-bottom: 1em;
+}
+article ol {
+	margin-left:1.5em;
+	margin-top:0.7em;
+	margin-bottom:0.7em;
+}
+.major {
+	margin:-0.15em 0 0.5em -0.1em;
+}
+.minor {
+	margin:0.4em 0 0.2em 0;
+	font-size:1.3em;
+}
+.minmin {
+	margin:0.2em 0 0.1em 0;
+	font-size:1.2em;
+}
+code {
+	display:block;
+	background-color:#555555;
+	color:#55FF55;	
+	padding:0.3em 0.4em;
+	font-family: "Courier New", Courier, monospace;
+	font-weight:bold;
+	height:100%;
+	border: 1px solid #e0e0e0;
+}
+#ok {
+	padding:0 0.4em;
+}
+#okInfo {
+	font-family: "Courier New", Courier, monospace;
+	font-size:0.96em;
+	color:red;
+}
+/*#outcome {
+	margin-top:0.5em;
+	display:none;
+	border:1px solid #DDDDDD;
+	background-color:#E5F7FB;
+	padding:0.5em;
+}*/
+#canvascont{
+	margin-top:0.5em;
+	position: relative;
+	display:none;
+}
+#hanoicanvas {
+	border:1px solid #DDDDDD;
+	width:100%;
+	height:100%;
+}
+#controls {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+#speed {
+	float:left;
+	margin:0.8em;
+	margin-left:0;
+	padding:0.07em 0em;
+
+}
+#prev, #next, #auto{
+	padding:0.07em 0.4em;
+	margin:0.8em;
+	float: left;
+	/*margin-left:10%;*/
+}
+
+
+
+footer {
+	/*clear:both;*/
+	padding:0.4em;
+	margin-bottom:1em;
+	background-color:#555555;
+	color:white;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+	[class*='col-'] {margin-right: 1.6%;}
+	[class*='col-']:last-of-type {margin-right: 0;}
+	.col-1-6 {width: 15.3333%;}
+	.col-2-6 {width: 32.2667%;}
+	.col-3-6 {width: 49.2%;}
+	.col-4-6 {width: 66.1333%;}
+	.col-5-6 {width: 83.0667%;}
+	.col-6-6 {width: 100.000%;}
+	
+	html {
+		font-size: 100%;
+	}
+	.container {
+		max-width:940px;
+	}
+	#logo {
+		display:block;
+		margin:0.9em;
+		height:6em;
+		width:6em;
+		float:left;
+	}
+	#logotext {
+		float:left;
+		clear:none;
+		margin:0.55em 0 0 0;
+		font-size:3em;
+		/*color:black;*/
+	}
+	#info {
+		float:left;
+		margin:0.9em 0.3em;
+	}
+	nav {
+		padding-right:0.5em;
+		margin-bottom:1.5em;
+	}
+	#right {
+		margin-top:0.4em;
+		font-style:italic;
+	}
+	aside {
+		display:block;
+		width:100%;
+		margin-top:0.5em; /*will overlap with leftMenu margin-bottom; by design*/
+		border-radius: 0.5em;
+		border: 1px solid #006183;
+		background-color:white;
+		color:#006183;
+		padding:0.8em;
+		line-height:150%;
+		float:left;
+	}
+	#showMenu {
+		display:none;
+	}
+	#leftMenu {
+		display:block !important; 
+	}
+	
+	article {
+		
+		padding-left:0.9em;
+		border-left: 1px solid gainsboro;
+	}
+	article ol {
+		margin-left:2em;
+	}
+	.major {
+		margin:-0.06em 0 0.5em 0em;
+	}
+	.minmin {
+		margin-top:0.2em;
+	}
+	#controls {
+		left: 10%;
+	}
+	#prev, #next, #auto{
+		/*margin-left:20%;*/
+	}
+	footer {
+		margin-right:0.7em;
+	}
+}
+

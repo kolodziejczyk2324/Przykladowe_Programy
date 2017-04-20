@@ -1,0 +1,51 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+$blueColor: #006183;
+$redColor: #DE4A2A;
+$greyColor: #555555;
+$greenColor: #55EF55;
+$lightGreyColor: #E1E1E1;
+$fontSize: 120%;
+
+#container{
+	font-family: Lato;
+	width:60%;
+	max-width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: $blueColor;
+	text-align: center;
+	font-size:$fontSize;
+	color: white;
+	padding-bottom: 2em;
+	border-radius:20px;
+}
+
+#POWROT{
+	text-decoration: none;
+	background:white;
+	color:$blueColor;
+	padding:.25em .5em;
+	margin:0;
+	cursor:pointer;
+	border-radius:10px;
+	&:hover{ /*Link po najechaniu*/
+		background-color:black;
+		color: white;
+	}
+}
+
+.textField{
+	font-size:$fontSize;
+	overflow:auto;
+}
+
+.button{
+	background:$redColor;
+	color:#fff;
+	padding:.25em .5em;
+	margin:2%;
+	cursor:pointer;
+	border-radius:10px;
+	font-size: $fontSize;
+}

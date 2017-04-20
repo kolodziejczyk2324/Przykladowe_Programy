@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">l4</string>
+    <string-array name="spinner_array">
+        <item>Brak</item>
+        <item>Wazne</item>
+        <item>Bardzo wazne</item>
+    </string-array>
+    <string-array name="month_array">
+        <item>Styczen</item>
+        <item>Luty</item>
+        <item>Marzec</item>
+        <item>Kwiecien</item>
+        <item>Maj</item>
+        <item>Czerwiec</item>
+        <item>Lipiec</item>
+        <item>Sierpien</item>
+        <item>Wrzesien</item>
+        <item>Pazdziernik</item>
+        <item>Listopad</item>
+        <item>Grudzien</item>
+    </string-array>
+    <string name="calendar">Kalendarz</string>
+    <string name="add">Dodaj</string>
+</resources>

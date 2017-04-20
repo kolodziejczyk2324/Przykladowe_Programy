@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/title_shape"/>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/dayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dayMonthYearSMALLSize"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/monthTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dayMonthYearSMALLSize"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/monthColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/yearTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dayMonthYearSMALLSize"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:padding="2dp"
+            android:textSize="@dimen/timeSMALLSize"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="5"
+        android:id="@+id/textTextView"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/dayMonthYearSMALLSize"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:scrollbars="vertical"/>
+
+</LinearLayout>
